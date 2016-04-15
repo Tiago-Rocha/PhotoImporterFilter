@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Anf-Mt-ezG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Filter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackgroundFilter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-04-02 at 12.50.08.png" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-l2-L8c">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oiw-l2-L8c" secondAttribute="bottom" id="09W-Em-Cgf"/>
+                            <constraint firstAttribute="trailing" secondItem="oiw-l2-L8c" secondAttribute="trailing" id="gjX-23-MHk"/>
+                            <constraint firstItem="oiw-l2-L8c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sMD-XE-z6p"/>
+                            <constraint firstItem="oiw-l2-L8c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="umt-0Z-LhZ"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PHn-NE-cS2"/>
+                        <barButtonItem title="Import" id="bTm-5M-kYc"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="adz-Zx-RDa"/>
+                        <barButtonItem title="Apply Filter" id="6gw-kn-mWk">
+                            <connections>
+                                <action selector="applyFilter:" destination="BYZ-38-t0r" id="h66-Gg-5VC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="grR-Dm-VMn"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Filter" id="f05-yD-K2y"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="oiw-l2-L8c" id="lAK-JK-ypK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1252" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LnW-V5-U5j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Anf-Mt-ezG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bQD-mb-zEO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ozi-HU-uL4">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wSy-Jj-tG1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3I-qg-1Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="1089"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2016-04-02 at 12.50.08.png" width="493" height="377"/>
+    </resources>
 </document>

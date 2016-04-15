@@ -15,6 +15,7 @@
 		47C32F451CC0E43F00AEB660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C32F431CC0E43F00AEB660 /* LaunchScreen.storyboard */; };
 		47C32F501CC0E44000AEB660 /* BackgroundFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C32F4F1CC0E44000AEB660 /* BackgroundFilterTests.swift */; };
 		47C32F5B1CC0E44000AEB660 /* BackgroundFilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C32F5A1CC0E44000AEB660 /* BackgroundFilterUITests.swift */; };
+		47C32F691CC0E49300AEB660 /* Screen Shot 2016-04-02 at 12.50.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C32F681CC0E49300AEB660 /* Screen Shot 2016-04-02 at 12.50.08.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		47C32F561CC0E44000AEB660 /* BackgroundFilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundFilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C32F5A1CC0E44000AEB660 /* BackgroundFilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundFilterUITests.swift; sourceTree = "<group>"; };
 		47C32F5C1CC0E44000AEB660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C32F681CC0E49300AEB660 /* Screen Shot 2016-04-02 at 12.50.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2016-04-02 at 12.50.08.png"; path = "../../../Screen Shot 2016-04-02 at 12.50.08.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		47C32F361CC0E43F00AEB660 /* BackgroundFilter */ = {
 			isa = PBXGroup;
 			children = (
+				47C32F681CC0E49300AEB660 /* Screen Shot 2016-04-02 at 12.50.08.png */,
 				47C32F371CC0E43F00AEB660 /* AppDelegate.swift */,
 				47C32F391CC0E43F00AEB660 /* ViewController.swift */,
 				47C32F3B1CC0E43F00AEB660 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47C32F451CC0E43F00AEB660 /* LaunchScreen.storyboard in Resources */,
+				47C32F691CC0E49300AEB660 /* Screen Shot 2016-04-02 at 12.50.08.png in Resources */,
 				47C32F421CC0E43F00AEB660 /* Assets.xcassets in Resources */,
 				47C32F3D1CC0E43F00AEB660 /* Main.storyboard in Resources */,
 			);
