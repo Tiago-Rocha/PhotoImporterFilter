@@ -9,29 +9,17 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackgroundFilter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-04-02 at 12.50.08.png" id="UWu-ln-6pa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-04-02 at 12.50.08.png" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-l2-L8c">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="oiw-l2-L8c" secondAttribute="bottom" id="09W-Em-Cgf"/>
-                            <constraint firstAttribute="trailing" secondItem="oiw-l2-L8c" secondAttribute="trailing" id="gjX-23-MHk"/>
-                            <constraint firstItem="oiw-l2-L8c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sMD-XE-z6p"/>
-                            <constraint firstItem="oiw-l2-L8c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="umt-0Z-LhZ"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="PHn-NE-cS2"/>
-                        <barButtonItem title="Import" id="bTm-5M-kYc"/>
+                        <barButtonItem title="Import" id="pFC-AU-P2D">
+                            <connections>
+                                <action selector="importPhoto:" destination="BYZ-38-t0r" id="IzT-uN-iqi"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="adz-Zx-RDa"/>
                         <barButtonItem title="Apply Filter" id="6gw-kn-mWk">
                             <connections>
@@ -42,7 +30,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Filter" id="f05-yD-K2y"/>
                     <connections>
-                        <outlet property="photoImageView" destination="oiw-l2-L8c" id="lAK-JK-ypK"/>
+                        <outlet property="photoImageView" destination="UWu-ln-6pa" id="oG9-kr-xEG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

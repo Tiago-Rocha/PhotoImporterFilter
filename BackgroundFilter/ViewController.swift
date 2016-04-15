@@ -7,13 +7,21 @@
 //
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate  {
     
-    @IBOutlet weak var photoImageView: UIImageView!
+    //@IBOutlet weak var photoImageView: UIImageView!
     
+    @IBOutlet var photoImageView: UIImageView!
     // Create a place to render the filtered image
     let context = CIContext(options: nil)
     
+    @IBAction func importPhoto(sender: AnyObject) {
+        NSLog("Button Pressed")
+      /*  let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.
+        presentViewController(picker, animated: true, completion: nil)
+    */}
     @IBAction func applyFilter(sender: AnyObject) {
         
         // Create an image to filter
@@ -32,7 +40,7 @@ class ViewController: UIViewController {
         photoImageView.image = UIImage(CGImage: renderedImage)
         
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,7 +52,6 @@ class ViewController: UIViewController {
     }
     
 }/*
-import UIKit
 
 class ViewController: UIViewController/*, UINavigationControllerDelegate, UIImagePickerController */ {
 //    class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
